@@ -47,13 +47,17 @@ span {
   font-size: 10px;
 }
 
+#sig a:link {
+  color: #000000;
+}
+
 </style>
   
 </head>
 <body>
 <div><div id="itis">It is</div><canvas id="clock" width="300" height="300">time for a new browser</canvas></div>
 <div id="texassucks">and <span class="inverted">T</span>exas still sucks.</div>
-<div id="sig">© William Lieurance.   BOOMER</div>
+<div id="sig">©2014 William Lieurance.    <a href="https://github.com/peculater/okietime">BOOMER</a></div>
   <script type="application/x-javascript">
     draw();
    
