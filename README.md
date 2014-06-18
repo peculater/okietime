@@ -1,7 +1,8 @@
 okietime
 ========
 
-Super simple page about how much _|_exas sucks
+Super simple page comparing the current time and whether or not _|_exas sucks.  
+Visible at http://www.okietime.com
 
 
 To use
