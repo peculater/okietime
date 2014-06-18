@@ -1,6 +1,7 @@
 CP=cp
 M4=m4
-MKDIR_P = mkdir -p
+MKDIR_P=mkdir -p
+RM=rm
 WEBSITE_DIR=/var/www/okietime
 
 all: index
@@ -13,4 +14,9 @@ install: index
 
 output:
 	$(MKDIR_P) output
+
+clean:
+	$(RM) -Rf output
+
+distclean: clean
 
