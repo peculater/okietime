@@ -1,4 +1,5 @@
 CP=cp
+DIFF=diff
 M4=m4
 MKDIR_P=mkdir -p
 RM=rm
@@ -20,3 +21,5 @@ clean:
 
 distclean: clean
 
+diff: index
+	$(DIFF) $(WEBSITE_DIR)/index.html output/index.html
