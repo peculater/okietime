@@ -22,4 +22,4 @@ clean:
 distclean: clean
 
 diff: index
-	$(DIFF) $(WEBSITE_DIR)/index.html output/index.html
+	-$(DIFF) $(WEBSITE_DIR)/index.html output/index.html
