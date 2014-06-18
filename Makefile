@@ -5,12 +5,12 @@ MKDIR_P=mkdir -p
 RM=rm
 WEBSITE_DIR=/var/www/okietime
 
-all: index
+all: output/index.html
 
-index: output
+output/index.html: output
 	$(M4) < src/index.html.m4 > output/index.html
 
-install: index
+install: output/index.html
 	$(CP)  output/index.html  $(WEBSITE_DIR)
 
 output:
@@ -21,5 +21,5 @@ clean:
 
 distclean: clean
 
-diff: index
+diff: output/index.html
 	-$(DIFF) $(WEBSITE_DIR)/index.html output/index.html
