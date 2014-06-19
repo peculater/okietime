@@ -143,7 +143,7 @@ span {
         //Draw clock pointers but this time rotate the canvas rather than
         //calculate x/y start/end positions.
         //
-        c2d.lineWidth=6;
+        c2d.lineWidth=8;
         //Draw hour hand
         c2d.rotate(Math.PI/6*(hrs+(min/60)+(sec/3600)));
         c2d.beginPath();
@@ -152,6 +152,8 @@ span {
         c2d.stroke();
         c2d.restore();
         c2d.save();
+        c2d.lineWidth=6;
+        //Draw hour hand
         //Draw minute hand
         c2d.rotate(Math.PI/30*(min+(sec/60)));
         c2d.beginPath();
